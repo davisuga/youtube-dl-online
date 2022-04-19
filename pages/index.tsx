@@ -14,7 +14,9 @@ const Home: NextPage = () => {
         value={videoUrl}
         onChange={({ target }) => setVideoUrl(target.value)}
       />
-      <input type="button">Download video</input>
+      <button type="button" onClick={() => window.open()}>
+        Download video
+      </button>
     </div>
   );
 };
